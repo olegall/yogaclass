@@ -1,0 +1,490 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+        <title id="title">Йога-Класс!</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen"/>
+	
+		
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+		<link href="css/reset.css" type="text/css" rel="stylesheet">
+        <link href="css/styles.css" type="text/css" rel="stylesheet">
+		
+
+		
+		<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+		<!--<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>-->
+		
+		<script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
+		
+		<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+		<link href="css/jquery.fancybox.css?v=2.1.5" type="text/css" rel="stylesheet">
+
+		<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+		<script src="js/script.js" type="text/javascript"></script>
+		
+		<script type="text/javascript">
+			/*
+			$(window).load(function() {
+				$('#slider').nivoSlider();
+				
+				$("a.grouped_elements").fancybox();
+				
+				//$("a.grouped_elements").fancybox({
+				//	'hideOnContentClick': true
+				//});
+
+				// Apply fancybox to multiple items
+				
+				//$("a.grouped_elements").fancybox({
+					//'transitionIn'	:	'none',
+					//'transitionOut'	:	'none',
+					//'speedIn'		:	600, 
+					//'speedOut'		:	200, 
+					//'overlayShow'	:	false
+				//});
+				//$("tr:even").css("background-color", "#bbbbff");
+				//$("tr:odd").addClass("td_background");
+				$("#table_monday .row:even").addClass("td_background");
+				$("#table_tuesday .row:even").addClass("td_background");
+				$("#table_wednesday .row:even").addClass("td_background");
+				$("#table_thursday .row:even").addClass("td_background");
+				$("#table_friday .row:even").addClass("td_background");
+				$("#table_saturday .row:even").addClass("td_background");
+				$("#table_sunday .row:even").addClass("td_background");				
+				
+				
+				$("#monday").css("height",$("#table_monday").height());
+				$("#monday p").css("margin-top",$("#table_monday").height()/2 - 18);
+				
+				$("#tuesday").css("height",$("#table_tuesday").height());
+				$("#tuesday p").css("margin-top",$("#table_tuesday").height()/2 - 18);
+				
+				$("#wednesday").css("height",$("#table_wednesday").height());
+				$("#wednesday p").css("margin-top",$("#table_wednesday").height()/2 - 18);
+				
+				$("#thursday").css("height",$("#table_thursday").height());
+				$("#thursday p").css("margin-top",$("#table_thursday").height()/2 - 18);
+
+				$("#friday").css("height",$("#table_friday").height());
+				$("#friday p").css("margin-top",$("#table_friday").height()/2 - 18);
+
+				$("#saturday").css("height",$("#table_saturday").height());
+				$("#saturday p").css("margin-top",$("#table_saturday").height()/2 - 18);
+				
+				$("#sunday").css("height",$("#table_sunday").height());
+				$("#sunday p").css("margin-top",$("#table_sunday").height()/2 - 18);
+				
+				// Галерея
+				$(".div_in_gallery").css("display","none");
+				$("#link1_area").css("display","block");
+				
+				$(".link1").css("border","0");
+				
+				$("#links_container a").click(function() {
+					$("#links_container a").css("border-bottom","1px dotted #ff5613");
+					
+					$(this).css("border","0");
+					$(".div_in_gallery").css("display","none");
+
+					$("#" + $(this).attr("class") + "_area").css("display", "block");
+					
+				});
+				
+				$(".p_instructors").css("min-height", $(".instructors_image").height());
+				
+				
+				console.log($("#table_right").css("height"));
+
+
+				
+				ymaps.ready(init);
+				var myMap, 
+					myPlacemark;
+
+				function init(){ 
+					myMap = new ymaps.Map ("yandex_map", {
+						center: [54.616393,39.723735],
+						zoom: 17
+					}); 
+					
+					myMap.controls.add('zoomControl');
+					
+					myPlacemark = new ymaps.Placemark([54.616393,39.723735], {
+						content: 'Москва!',
+						balloonContent: 'Стоматология "Премиум"'
+					});
+					
+					myMap.geoObjects.add(myPlacemark);
+					
+					var smallZoomControl = new YMaps.SmallZoom();
+				}
+			});  */
+		</script>
+</head>
+<body>
+		<div id="top_stripe"></div>
+		<div id="header">
+			<div id="left">
+				<p>Приходите:</p>
+				<p><span>ул. Пушкина, д. 18</span></p>
+			</div>
+			<a href=""><img src="images/logo.jpg"></a>
+			<div id="right">
+				<p>Звоните:</p>
+				<p id="phone"><span>+7 905 187 03 33</span></p>
+				<p>Пишите:</p>
+				<p><span>yogaclass@mail.ru</span></p>				
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+		<div id="menu_wrap">
+			<div>
+			<ul>
+				<li><a href="">О НАС</a></li>
+				<li><a href="">РАСПИСАНИЕ И ЦЕНЫ</a></li>
+				<li><a href="">ИНСТРУКТОРЫ</a></li>
+				<li><a href="">ГАЛЕРЕЯ</a></li>
+			</ul>
+			</div>
+		</div>
+		<div id="content">
+		
+			<!-- Главная -->
+			<!--
+			<div class="slider-wrapper theme-default round_all_corners">
+				<div id="slider" class="nivoSlider">
+					<img src="images/slider1.jpg" alt="">
+					<img src="images/slider2.jpg" alt="">
+					<img src="images/slider3.jpg" alt="">
+				</div>
+			</div>
+			<div id="left">
+
+			<h1>Занятия сегодня</h1>	
+			<div id="today_table">
+				<div class="first round_l">Время</div><div class="first">Класс</div><div class="first round_r">Инструктор</div>
+				<div class="clear"></div>
+				
+				<div id="table_monday">
+					<div class="row"><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+				
+			</div>
+			<div id="right">
+				<h1>Новости</h1>
+				<h2>4 апреля</h2>
+				<p>
+				Алексей Кравиц приглашает Вас на уникальный семинар, где Вы будуете осваивать очищающие
+				йогические практики: шанкпракшалану (практика), джала-нети и сула-нети (теория)
+				</p>
+				<hr>
+				<h2>4 апреля</h2>
+				<p>
+				Алексей Кравиц приглашает Вас на уникальный семинар, где Вы будуете осваивать очищающие
+				йогические практики: шанкпракшалану (практика), джала-нети и сула-нети (теория)
+				</p>
+				<hr>
+				<h2>4 апреля</h2>
+				<p>
+				Алексей Кравиц приглашает Вас на уникальный семинар, где Вы будуете осваивать очищающие
+				йогические практики: шанкпракшалану (практика), джала-нети и сула-нети (теория)
+				</p>
+				<div id="navigation" class="round_all_corners">
+					<a href="">1</a> <a href="">2</a> <a href="">3</a> ... <a href="">10</a>
+				</div>
+			</div>
+			<div class="clear"></div>
+			-->
+			
+			
+			<!-- Инструкторы -->
+			<!--
+			<h1>Наши инструткоры компетентные, весёлые и симпатичные!</h1>
+			<br>
+			
+			<p class="p_name">Летошева Екатерина</p>
+			<p class="p_instructors">
+				<img src="images/letosheva.jpg" alt="" class="instructors_image round_all_corners">
+				
+				Сертифицированный инструктор Федерации Йоги России<br>
+				Проходила регулярное обучение на семинарах по различным направлениям йоги:<br>
+				- А. Константинов (Красноярск) Аштанга-виньяса йога (1 серия)<br>
+				- Н. Сенина (Москва) Аштанга-виньяса йога (1 и 2 серии)<br>
+				- П. Ряйсянен (Финляндия) Аштанга-виньяса йога (2-я серия)<br>
+				- Д. Демин (Москва) Основы йогатерапии<br>
+				- А. Князятова (Москва) Пранаяма и задержки дыхания в хатха-йоге<br>
+				- М. Цугуй (Украина) цикл семинаров и мастер-классов<br><br>
+				Участница фестиваля «Йога белых ночей» Санкт-Петербург<br>
+				Посещала классы: И. Пахомов «Йогатерапия», Е. Степанова «Янтра-йога», И. Красильчук «Аштанга-виньяса йога».
+				<br><br>Прошла курс повышения квалификации при РГУФКСМиТ<br>
+				Является действительным членом ФЙР и председателем РО ФЙР по Рязанской области
+  		    </p>
+			
+			<br><br><br>
+			
+			<p class="p_name">Тагильцева Анна</p>
+			<p class="p_instructors">
+				<img src="images/tagiltseva.jpg" alt="" class="instructors_image round_all_corners">
+				
+				Преподаватель Хатха и Аштанга йоги.<br>
+				4 года практики, в том числе 8 месяцев практики и обучения в лучшей студии Дублина, Ирландия.<br>
+				Два года практики преподавания.<br>
+				Участница семинаров Сергея Агапкина, Михаила Павлова,  Александра Галкина, Артема Фролова.<br>
+				Прошла обучение на интенсиве для преподавателей Аштанга-йоги Девида Свенсона (USA)<br>
+				Сертифицированный мастер тайского массажа.<br>
+  		    </p>
+			
+			<br><br><br>
+
+			<p class="p_name">Коршунова Анна</p>
+			<p class="p_instructors">
+				<img src="images/korshunova.jpg" alt="" class="instructors_image round_all_corners">
+				Преподаватель Хатха и Аштанга йоги.<br>
+				4 года практики, в том числе 8 месяцев практики и обучения в лучшей студии Дублина, Ирландия.<br>
+				Два года практики преподавания.<br>
+				Участница семинаров Сергея Агапкина, Михаила Павлова,  Александра Галкина, Артема Фролова.<br>
+				Прошла обучение на интенсиве для преподавателей Аштанга-йоги Девида Свенсона (USA)<br>
+				Сертифицированный мастер тайского массажа.<br>
+  		    </p>
+			-->
+			
+			
+
+		
+			
+			
+			
+			<!-- О нас -->
+			<!--
+			<h1>О студии</h1>
+			<p>
+				Собравшись вместе, мы хотим развеять стереотип, будто йога обязательно должна быть связана с религией, 
+				мистикой  и прочей экзотической атрибутикой, лежанием на гвоздях и закидыванием ног 
+				за уши (хоть мы это и можем)).<br><br>
+				Еще мы можем предложить Вам для занятий:<br>
+				- два уютных зала с хорошим полом, кондиционерамии и зеркалами<br>
+				- коврики, ремни, блоки и все что необходимо Вам для занятий<br>
+				- прохладную воду<br>
+				- горячий чай<br>
+				- КЛАССные цены<br>
+				- внимание, заботу и весь наш преподавательский опыт, для того, чтобы сделать Вашу практику максимально комфортной и эффективной
+			</p>
+			<img src="images/about_1.jpg" alt="" class="img_about_us round_all_corners">
+			<img src="images/about_2.jpg" alt="" class="img_about_us2 round_all_corners">
+			<img src="images/about_3.jpg" alt="" class="img_about_us3 round_all_corners">
+			<div class="clear"></div>
+			
+			<h1>Контактная информация</h1>
+			<div id="contacts_wrapper" class="round_all_corners">
+				<p id="p_left">Адрес<br>Телефон<br>Электронная почта</p>
+				<p id="p_right">ул. Пушкина, д.18<br>+7 905 187 03 33<br>yogaclass@mail.ru</p>
+				<div class="clear"></div>
+			</div>
+			<h1>Как до нас добраться</h1>
+			<p>
+			<b>От остановки радиоакадемия</b><br>
+			Огибаете магазин «Сорока» справа и идете вниз по ул. Пушкина до вывески КА2 салон мебели. Через 20 метров правее будет вход в студию
+			<br><br>
+			<b>От остановки ул Гагарина</b><br>
+			С ул. Дзержинского поворачиваете на ул. Татарскую и идете до пересечения с ул. Пушкина. На перекрестке слева
+			</p>			
+			<div id="yandex_map" class="round_all_corners"></div>
+			-->
+			
+			
+			
+			
+			
+			
+			
+			<!-- Галерея -->
+			
+			<h1>Наши фото</h1>
+				<div id="center_container">
+				<span id="links_container" class="round_all_corners">
+					<a class="link1" href="#" id="first">Инструкторы</a>&nbsp &nbsp
+					<a class="link2" href="#">Воскресная йога</a>&nbsp &nbsp
+					<a class="link3" href="#" id="last">Видео</a>
+				</span>
+				</div>
+			<br>
+			
+			<div id="link1_area" class="div_in_gallery">
+				<h3>Тагильцева Анна</h3>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/instructors/1.jpg"><img src="images/instructors/preview1.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/instructors/2.jpg"><img src="images/instructors/preview2.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/instructors/3.jpg"><img src="images/instructors/preview3.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<div class="clear"></div>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/instructors/4.jpg"><img src="images/instructors/preview4.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/instructors/5.jpg"><img src="images/instructors/preview5.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/instructors/6.jpg"><img src="images/instructors/preview6.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<div class="clear"></div>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/instructors/7.jpg"><img src="images/instructors/preview7.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/instructors/8.jpg"><img src="images/instructors/preview8.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/instructors/9.jpg"><img src="images/instructors/preview9.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<div class="clear"></div>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/instructors/10.jpg"><img src="images/instructors/preview10.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<div class="clear"></div>
+				<br><br>
+				
+				<hr>
+				
+				<h3>Летошева Екатерина</h3>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/instructors/11.jpg"><img src="images/instructors/preview11.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/instructors/12.jpg"><img src="images/instructors/preview12.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/instructors/13.jpg"><img src="images/instructors/preview13.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<div class="clear"></div>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/instructors/14.jpg"><img src="images/instructors/preview14.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/instructors/15.jpg"><img src="images/instructors/preview15.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/instructors/16.jpg"><img src="images/instructors/preview16.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<div class="clear"></div>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/instructors/17.jpg"><img src="images/instructors/preview17.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/instructors/18.jpg"><img src="images/instructors/preview18.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/instructors/19.jpg"><img src="images/instructors/preview19.jpg" alt="" class="preview_gallery round_all_corners"></a>				
+				<div class="clear"></div>
+				<br><br>
+				
+			</div>
+			
+			
+			<div id="link2_area" class="div_in_gallery">
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/sunday_yoga/1.jpg"><img src="images/sunday_yoga/preview1.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/sunday_yoga/2.jpg"><img src="images/sunday_yoga/preview2.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/sunday_yoga/3.jpg"><img src="images/sunday_yoga/preview3.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<div class="clear"></div>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/sunday_yoga/4.jpg"><img src="images/sunday_yoga/preview4.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<a class="grouped_elements" data-fancybox-group="gallery" href="images/sunday_yoga/5.jpg"><img src="images/sunday_yoga/preview5.jpg" alt="" class="preview_gallery round_all_corners"></a>
+				<div class="clear"></div>				
+			</div>	
+			
+			
+			<div id="link3_area" class="div_in_gallery">
+				<h3>Скоро будет!</h3>
+				<br><br><br><br>
+			</div>			
+			
+			
+			
+			
+			
+			<!-- Расписание и цены -->
+			<!--
+			<h1>Расписание занятий на сентябрь</h1>
+
+			<div id="table">
+				<div class="first empty"></div>
+				<div class="first round_l">Время</div><div class="first">Класс</div><div class="first">Инструктор</div><div class="first round_r">Стоимость, руб</div>
+				<div class="clear"></div>
+				
+				<div id="monday" class="round_l_b"><p>Понедельник</p></div>
+				<div id="table_monday">
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+				</div>
+				<div class="clear"></div>
+				
+				<div id="tuesday" class="round_l_b"><p>Вторник</p></div>
+				<div id="table_tuesday">
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+				</div>
+				<div class="clear"></div>
+				
+				<div id="wednesday" class="round_l_b"><p>Среда</p></div>
+				<div id="table_wednesday">
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+				</div>
+				<div class="clear"></div>
+				
+				<div id="thursday" class="round_l_b"><p>Четверг</p></div>
+				<div id="table_thursday">
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+				</div>
+				<div class="clear"></div>
+				
+				<div id="friday" class="round_l_b"><p>Пятница</p></div>
+				<div id="table_friday">
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+				</div>
+				<div class="clear"></div>
+				
+				<div id="saturday" class="round_l_b"><p>Суббота</p></div>
+				<div id="table_saturday">
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>					
+				</div>
+				<div class="clear"></div>
+				
+				<div id="sunday" class="round_l_b"><p>Воскресенье</p></div>
+				<div id="table_sunday">
+					<div class="row"><div class="data">  14.30-16.00  </div><div class="data">  Хатха-йога  </div><div class="data">  Катя  </div><div class="data">  200  </div><div class="clear"></div></div>
+				</div>
+				<div class="clear"></div>
+				
+			</div>
+			-->
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		<div id="footer_bg">
+			<div id="footer">
+				<ul>
+					<li><a href="">О нас</a></li>
+					<li><img src="images/divider.png" alt=""></li>
+					<li><a href="">Расписание и цены</a></li>
+					<li><img src="images/divider.png" alt=""></li>
+					<li><a href="">Инструкторы</a></li>
+					<li><img src="images/divider.png" alt=""></li>
+					<li><a href="">Галерея</a></li>					
+				</ul><br>
+				
+				<div class="clear"></div>
+				
+				<p id="yoga_cool">Yoga-Класс!   с 2013</p>
+				<p id="development">Разработка сайта:  <a href="http://webcraftgroup.com">webcraft</a></p>
+				<div class="clear"></div>
+				
+			</div>
+			
+		</div>
+</body>
+</html>
